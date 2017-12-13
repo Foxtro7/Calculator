@@ -1,5 +1,7 @@
 // JavaScript Document
 
+var m = "";
+
 // Change Display
 function d(val) {
 	document.getElementById("d").value = val;
@@ -8,6 +10,15 @@ function d(val) {
 // Type numbers and operators
 function v(val) {
 	document.getElementById("d").value += val;
+}
+
+function store_mem() {
+	e();
+	m = document.getElementById("d").value;
+}
+
+function clear_mem() {
+	m = "";
 }
 
 //Evaluate the equation
