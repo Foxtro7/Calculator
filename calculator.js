@@ -12,6 +12,7 @@ function v(val) {
 	document.getElementById("d").value += val;
 }
 
+// Memory
 function store_mem() {
 	e();
 	m = document.getElementById("d").value;
@@ -21,6 +22,11 @@ function clear_mem() {
 	m = "";
 }
 
+// Rounding
+function r(val) {
+	document.getElementById("d").value = Math.round(document.getElementById("d").value * val) / val;
+}
+	
 //Evaluate the equation
 function e() {
 	try {
