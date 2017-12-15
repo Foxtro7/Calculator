@@ -26,7 +26,12 @@ function clear_mem() {
 function r(val) {
 	document.getElementById("d").value = Math.round(document.getElementById("d").value * val) / val;
 }
-	
+
+// Backspace
+function b() {
+	document.getElementById("d").value = document.getElementById("d").value.slice(0, -1);
+}
+
 //Evaluate the equation
 function e() {
 	try {
