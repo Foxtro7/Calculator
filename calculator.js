@@ -24,6 +24,7 @@ function clear_mem() {
 
 // Rounding
 function r(val) {
+	e();
 	document.getElementById("d").value = Math.round(document.getElementById("d").value * val) / val;
 }
 
