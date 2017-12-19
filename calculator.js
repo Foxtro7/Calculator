@@ -28,6 +28,18 @@ function r(val) {
 	document.getElementById("d").value = Math.round(document.getElementById("d").value * val) / val;
 }
 
+// Squaring
+function s() {
+	e();
+	document.getElementById("d").value = document.getElementById("d").value * document.getElementById("d").value;
+}
+
+// Percentage
+function per() {
+	e();
+	document.getElementById("d").value = document.getElementById("d").value / 100;
+}
+
 // Backspace
 function b() {
 	document.getElementById("d").value = document.getElementById("d").value.slice(0, -1);
